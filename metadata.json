@@ -1,0 +1,6 @@
+{
+  "name": "Sentinel — AI-Driven Crime Intelligence & Network Analysis Platform",
+  "description": "AI-driven crime intelligence, Modus Operandi clustering, explainable socio-economic risk profiling (SHAP), and network analysis platform for the Karnataka State Crime Records Bureau.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
