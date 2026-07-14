@@ -67,7 +67,7 @@ export default function App() {
           auditRes
         ] = await Promise.all([
           fetch('/api/stats'),
-          fetch('/api/firs'),
+          fetch('/api/firs?limit=15000'),
           fetch('/api/wards'),
           fetch('/api/criminals'),
           fetch('/api/alerts'),
@@ -82,7 +82,7 @@ export default function App() {
         const auditData = await auditRes.json();
 
         setStats(statsData);
-        setFirs(firsData);
+        setFirs(Array.isArray(firsData) ? firsData : (firsData.results || []));
         setWards(wardsData);
         setCriminals(crimsData);
         setAlerts(alertsData);
