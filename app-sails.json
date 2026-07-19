@@ -1,0 +1,8 @@
+{
+  "stack": "node20",
+  "build_command": "npm install && npm run build",
+  "command": "npm run start",
+  "env_variables": {
+    "NODE_ENV": "production"
+  }
+}

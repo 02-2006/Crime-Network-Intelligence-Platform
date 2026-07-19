@@ -77,10 +77,7 @@ try {
 const app = express();
 app.use(express.json());
 
-const PORT =
-  Number(process.env.X_ZOHO_CATALYST_LISTEN_PORT) ||
-  Number(process.env.PORT) ||
-  3000;
+const PORT = process.env.PORT ? parseInt(process.env.PORT, 10) : 3000;
 
 // ==========================================
 // API ENDPOINTS
